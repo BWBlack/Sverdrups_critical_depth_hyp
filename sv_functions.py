@@ -1,6 +1,7 @@
 #----- Package for the notebook Sverdrup_critical_depth ------#
 
 import numpy as np
+import os
 
 # find I_z for each day (which is the index of I_e)
 
