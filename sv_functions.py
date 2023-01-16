@@ -37,7 +37,9 @@ def get_me_data(file_name_1='Fig1_k0.1.csv', file_name_2='Fig1_k0.075.csv'):
     """
     file_name, file names (str)
     """
-    path_to_folder = 'C:/Users/uv20102/OneDrive - University of Bristol/Documents/Mini_experiments/Sverdrup_phytoplankton/extracted_data/'
+    
+    cwd = os.getcwd().replace('\\','/')
+    path_to_folder = cwd+'/extracted_data/'
     
     f1 = np.genfromtxt(path_to_folder + file_name_1, delimiter = ',')
    
